@@ -1,8 +1,8 @@
 {
-  "name": "brazilsforestcode",
+  "name": "publishstatic",
   "version": "0.1.0",
+  "homepage": "https://flameuss.github.io/publish-static",
   "private": true,
-
   "dependencies": {
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
@@ -42,8 +42,6 @@
     "prettier": "2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b deploy -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,7 +49,9 @@
     "dev:install": "npm install && npm run dev:postinstall",
     "dev:postinstall": "git lfs update --force && cd ./node_modules/husky && npm run install -- --append",
     "prettier:format": "prettier --config ./.prettierrc.js --write .",
-    "prettier:check": "prettier --config ./.prettierrc.js --check ."
+    "prettier:check": "prettier --config ./.prettierrc.js --check .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
