@@ -1,7 +1,7 @@
 {
   "Language": "pt",
-  "Title": "RESTORE+",
-  "Subtitle": "Restauração de Vegetação Nativa no Brasil Considerando o Código Florestal e os Impactos das Mudanças Climáticas",
+  "Title": "As soluções baseadas na natureza são críticas para colocar o Brasil no caminho para emissões líquidas zero até 2050",
+  "Subtitle": "",
   "AppBar": {
     "buttonDownload": "Baixar",
     "buttonAbout": "Sobre",
@@ -12,9 +12,9 @@
     }
   },
   "Resume": {
-    "part01": "Esta aplicação apresenta cenários de mudanças no uso da terra relacionados à restauração de florestas e vegetação nativa no Brasil. Construídos a partir do cenário IDCImperfect2 de ",
-    "part02": "(Soterroni et al., 2018)",
-    "part03": ", os cenários avaliam a implementação do Código Florestal Brasileiro considerando os impactos das mudanças climáticas. Os cenários se diferem em relação ao controle de desmatamento e às metas de restauração. A tabela abaixo mostra as principais características dos diferentes cenários."
+    "part01": "Esta aplicação descreve os principais resultados do artigo  ",
+    "part02": "\"As soluções baseadas na natureza são críticas para colocar o Brasil no caminho para emissões líquidas zero até 2050.\"",
+    "part03": " Para investigar se as políticas nacionais existentes e esperadas permitirão que o Brasil cumpra sua promessa de emissões líquidas zero de GEE até 2050, aplicamos uma abordagem de modelagem de avaliação integrada regional detalhada. Isso incluiu a quantificação do papel das soluções baseadas na natureza, como a proteção e restauração de ecossistemas, e soluções projetadas, como bioenergia com captura e armazenamento de carbono. Nossos resultados destacam a proteção do ecossistema como a medida de mitigação climática mais crítica e custo-efetiva para o Brasil, enquanto a dependência pesada de soluções projetadas caras e ainda não maduras colocará em risco as chances do Brasil de cumprir sua promessa de zero líquido até meados do século. Nossa análise sublinha a necessidade urgente do Brasil de ir além das políticas existentes para ajudar a combater a emergência climática, alinhar seus objetivos climáticos de curto e longo prazo e construir resiliência climática enquanto controla a perda de biodiversidade."
   },
   "Legend": {
     "cardTitlePrefix": "LEGENDA",
@@ -45,7 +45,7 @@
         "title": "Cenário",
         "chips": {
           "0": {
-            "name": "IDC2",
+            "name": "BASE",
             "label": "Baseline",
             "description": "Cenário de linha de base onde há um controle parcial do desmatamento ilegal nos biomas Amazônia e Cerrado. Não há restauração da vegetação nativa."
           },
@@ -55,18 +55,18 @@
             "description": "Cenário do Código Florestal (em Inglês, forest code, ou FC) onde o controle do desmatamento ilegal é efetivo em todos os biomas. Os déficits das áreas de preservação permanente são recuperados via restauração passiva. Os déficits de reserva legal são compensados por meio de cotas de reserva ambiental ou restauração passiva."
           },
           "2": {
-            "name": "FCnoCRA",
-            "label": "FCnoCRA",
+            "name": "FCplus",
+            "label": "FCplus",
             "description": "Construído sobre o FC, este cenário assume que não há mercado de Cotas de Reserva Ambiental (CRA) para compensar os déficits de reserva legal."
           },
           "3": {
-            "name": "FCnoSFA",
-            "label": "FCnoSFA",
+            "name": "FCNZ",
+            "label": "FCNZ",
             "description": "Construído sobre o FC, este cenário assume que a anistia de pequenas propriedades (em Inglês, small farms amnesty, ou SFA) não será concedida. Desta forma, os déficits de reserva legal de pequenas propriedades anteriores a 2008 serão restaurados."
           },
           "4": {
-            "name": "FCnoCRAnoSFA",
-            "label": "FCnoCRAnoSFA",
+            "name": "FCplusNZ",
+            "label": "FCplusNZ",
             "description": "Construído sobre o FC, este cenário assume que o mercado de Cotas de Reserva Ambiental (CRA) não será implementado e a anistia de pequenas propriedades (em Inglês, small farms amnesty, ou SFA) não será concedida."
           }
         },
@@ -83,29 +83,34 @@
             "description": "Esta classe abrange todas as florestas não manejadas e vegetação nativa. Tanto a floresta tropical perene da Amazônia, a floresta decídua da Caatinga e as savanas lenhosas do Cerrado estão incluídas nesta classe."
           },
           "1": {
-            "name": "Forest Regenerated",
-            "label": "Restauração",
-            "description": "Floresta passiva e rebrota de outra vegetação nativa necessária para compensar déficits de reserva legal."
+            "name": "crplnd",
+            "label": "crplnd",
+            "description": "input description here!"
           },
           "2": {
-            "name": "Planted Forest",
-            "label": "Floresta Plantada",
-            "description": "São plantações de curta rotação, com uma ou poucas espécies e densidade de plantio uniforme, que são utilizadas pelas indústrias de madeira e papel."
+            "name": "nonprd",
+            "label": "nonprd",
+            "description": "input description here!"
           },
           "3": {
-            "name": "Agriculture",
-            "label": "Agricultura",
-            "description": "Áreas com as 18 culturas do GLOBIOM, incluindo soja, cana-de-açúcar, milho, mandioca e arroz."
+            "name": "crarea",
+            "label": "crarea",
+            "description": "input description here!"
           },
           "4": {
-            "name": "Pasture",
-            "label": "Pasto",
-            "description": "Áreas de pasto usadas para pecuária."
+            "name": "grslnd",
+            "label": "grslnd",
+            "description": "input description here!"
           },
           "5": {
-            "name": "CR Carbon",
-            "label": "Carbono",
-            "description": "Estoque de carbono com base no mapa de carbono acima e abaixo do solo do Terceiro Inventário de Emissões do Brasil."
+            "name": "pltfor",
+            "label": "pltfor",
+            "description": "input description here!"
+          },
+          "6": {
+            "name": "others",
+            "label": "others",
+            "description": "input description here!"
           }
         }
       },

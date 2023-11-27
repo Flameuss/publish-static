@@ -1,7 +1,7 @@
 {
   "Language": "en",
-  "Title": "RESTORE+",
-  "Subtitle": "Forest and Native Vegetation Restoration in Brazil Considering Forest Code and Climate Change Impacts",
+  "Title": "Nature-based solutions are critical for putting Brazil on track towards net-zero emissions by 2050",
+  "Subtitle": "",
   "AppBar": {
     "buttonDownload": "Download",
     "buttonAbout": "About",
@@ -12,9 +12,9 @@
     }
   },
   "Resume": {
-    "part01": "This application presents land use changes scenarios related to forest and native vegetation restoration in Brazil. Built upon the IDCImperfect2 scenario from ",
-    "part02": "(Soterroni et al., 2018)",
-    "part03": ", the scenarios evaluate the implementation of Brazilian Forest Code considering climate change impacts.  The scenarios are different regarding deforestation control and restoration targets. The table below shows the key features of the different scenarios."
+    "part01": "This application describes the main results of the article ",
+    "part02": "\"Nature-based solutions are critical for putting Brazil on track towards net-zero emissions by 2050.\"",
+    "part03": " To investigate whether existing and expected national policies will allow Brazil to meet its net-zero GHG emissions pledge by 2050, we applied a detailed regional integrated assessment modelling approach. This included quantifying the role of nature-based solutions, such as the protection and restoration of ecosystems, and engineered solutions, such as bioenergy with carbon capture and storage. Our results highlight ecosystem protection as the most critical cost-effective climate mitigation measure for Brazil, whereas relying heavily on costly and not-mature-yet engineered solutions will jeopardise Brazil's chances of achieving its net-zero pledge by mid-century. Our analysis underlines the urgent need for Brazil to go beyond existing policies to help fight climate emergency, to align its short- and long-term climate targets, and to build climate resilience while curbing biodiversity loss."
   },
   "Legend": {
     "cardTitlePrefix": "LEGEND",
@@ -45,29 +45,29 @@
         "title": "Scenario",
         "chips": {
           "0": {
-            "name": "IDC2",
+            "name": "BASE",
             "label": "Baseline",
-            "description": "Baseline scenario where a partial illegal deforestation control applied in the Amazon and the Cerrado biomes. There is no native vegetation restoration."
+            "description": "Baseline (BASE) - Deforestation continues up to 2050, with Amazon rates above 1 Mha/yr, on average, between 2020 and 2030. No native vegetation restoration. Pasture recovery and afforestation, in line with the Low-Carbon Agriculture Plan (ABC+ Plan). The energy sector considers energy policies currently in place."
           },
           "1": {
             "name": "FC",
             "label": "FC",
-            "description": "Forest Code (FC) scenario where illegal deforestation control is effective in all biomes. The areas of permanent preservation deficits are fully recovered via passive restoration. Legal reserve deficits are compensated via environmental reserve quotas or passive restoration."
+            "description": "Forest Code (FC) - Built upon BASE, this scenario examines the contribution of Brazil's Forest Code to decrease GHG emissions. Native vegetation restoration takes place in illegally deforested areas identified as environmental debts by the Rural Environmental Cadastre (CAR)."
           },
           "2": {
-            "name": "FCnoCRA",
-            "label": "FCnoCRA",
-            "description": "Built upon the FC, this scenario assumes there is no environmental reserve quotas (in Portuguese, Cotas de Reserva Ambiental, or CRA) market to compensate for legal reserve deficits."
+            "name": "FCplus",
+            "label": "FCplus",
+            "description": "Forest Code Plus (FC+) - Built upon FC, this scenario eliminates illegal and legal deforestation and promote more than a twofold increase in the native vegetation restoration relative to FC. Restoration takes place in areas illegally deforested and identified as environmental debts by CAR, as well as in small farms that granted amnesty in 2012."
           },
           "3": {
-            "name": "FCnoSFA",
-            "label": "FCnoSFA",
-            "description": "Built upon the FC, this scenario assumes small farms amnesty (SFA) will not be granted, meaning that they will need to restore legal reserve deficits prior to 2008."
+            "name": "FCNZ",
+            "label": "FCNZ",
+            "description": "Forest Code Net Zero (FCNZ) - Built upon FC, this scenario allows the energy sector to go beyond existing and agreed infrastructure to bridge the gap to a least-cost net-zero GHG."
           },
           "4": {
-            "name": "FCnoCRAnoSFA",
-            "label": "FCnoCRAnoSFA",
-            "description": "Built upon the FC, this scenario assumes no environmental reserve quotas (in Portuguese, Cotas de Reserva Ambiental, or CRA) market as well as no  small farms amnesty (SFA) will be granted."
+            "name": "FCplusNZ",
+            "label": "FCplusNZ",
+            "description": "Forest Code Plus Net Zero (FC+NZ) - Built upon FC+, this scenario allows the energy sector to go beyond existing and agreed infrastructure to reach a least-cost net-zero GHG."
           }
         },
         "buttons": {
@@ -78,34 +78,39 @@
         "title": "Attribute",
         "chips": {
           "0": {
-            "name": "Natural Vegetation",
+            "name": "natveg",
             "label": "Native Vegetation",
             "description": "This class covers all unmanaged forests and native vegetation. Both the evergreen rain forest of Amazon, the deciduous forest of the Caatinga, and woody savannas of the Cerrado are included in this class."
           },
           "1": {
-            "name": "Forest Regenerated",
-            "label": "Restoration",
-            "description": "Passive forest and other native vegetation regrowth necessary to compensate legal reserve deficits."
+            "name": "crplnd",
+            "label": "crplnd",
+            "description": "input description here!"
           },
           "2": {
-            "name": "Planted Forest",
-            "label": "Planted Forest",
-            "description": "These are short-rotation plantations, with single or few species and uniform planting density, that are used by the wood and paper industries."
+            "name": "nonprd",
+            "label": "nonprd",
+            "description": "input description here!"
           },
           "3": {
-            "name": "Agriculture",
-            "label": "Crops",
-            "description": "Areas with the 18 GLOBIOM crops, including soy, sugarcane, corn, cassava, and rice."
+            "name": "crarea",
+            "label": "crarea",
+            "description": "input description here!"
           },
           "4": {
-            "name": "Pasture",
-            "label": "Pasture",
-            "description": "Pasture areas used for livestock ranching."
+            "name": "grslnd",
+            "label": "grslnd",
+            "description": "input description here!"
           },
           "5": {
-            "name": "CR Carbon",
-            "label": "Carbon",
-            "description": "Carbon stock based on the above and below ground carbon map from the Brazil’s Third Emissions Inventory."
+            "name": "pltfor",
+            "label": "pltfor",
+            "description": "input description here!"
+          },
+          "6": {
+            "name": "others",
+            "label": "others",
+            "description": "input description here!"
           }
         }
       },

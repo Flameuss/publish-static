@@ -9,8 +9,12 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 
 import { useTranslation } from 'react-i18next';
 
-import Logo from '../../assets/img/restore-logo.png';
-import BMULogo from '../../assets/img/bmu-logo.png';
+// import Logo from '../../assets/img/oxford-logo.png';
+import BMULogoIn from '../../assets/img/inpe-logo.png';
+import BMULogoNa from '../../assets/img/nature-logo.png';
+import BMULogoAg from '../../assets/img/agile-logo.png';
+import BMULogoOx from '../../assets/img/oxford-logo.png';
+import BMULogoNe from '../../assets/img/netzero-logo.png';
 import resumeEn from '../../assets/img/resume-en.png';
 import resumePt from '../../assets/img/resume-pt.png';
 
@@ -39,8 +43,8 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     imgLogo: {
-      height: 30,
-      marginLeft: 24,
+      height: 70,
+      marginLeft: 64,
       [theme.breakpoints.down('xs')]: {
         marginLeft: 0,
         marginTop: 8,
@@ -59,6 +63,7 @@ const useStyles = makeStyles((theme: Theme) =>
       height: 120,
       marginTop: 16,
       marginBottom: 0,
+      marginLeft: 15,
       [theme.breakpoints.down('xs')]: {
         marginBottom: 16,
       },
@@ -117,10 +122,10 @@ function Resume({ open, onClose }: ResumeProps) {
         aria-describedby="scroll-dialog-description"
       >
         <DialogTitle id="scroll-dialog-title">
-          <div className={classes.contentDialogTitile}>
-            {t('Subtitle')}
-            <img src={Logo} className={classes.imgLogo} alt="Restore" />
-          </div>
+          {/* <div className={classes.contentDialogTitile}> */}
+          {t('Title')}
+          {/* <img src={Logo} className={classes.imgLogo} alt="Restore" /> */}
+          {/* </div> */}
         </DialogTitle>
 
         <DialogContent dividers={scroll === 'paper'}>
@@ -136,7 +141,7 @@ function Resume({ open, onClose }: ResumeProps) {
 
             <strong>
               <a
-                href="https://iopscience.iop.org/article/10.1088/1748-9326/aaccbb"
+                href="https://onlinelibrary.wiley.com/doi/10.1111/gcb.16984"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -156,7 +161,61 @@ function Resume({ open, onClose }: ResumeProps) {
           </div>
 
           <div className={classes.imgContent}>
-            <img src={BMULogo} className={classes.imgBMULogo} alt="Restore+" />
+            <a
+              href="https://www.naturebasedsolutionsinitiative.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={BMULogoNa}
+                className={classes.imgBMULogo}
+                alt="Nature-logo"
+              />
+            </a>
+            <a
+              href="https://netzeroclimate.org/innovation-for-net-zero/nature-based-solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={BMULogoNe}
+                className={classes.imgBMULogo}
+                alt="Netzero-logo"
+              />
+            </a>
+            <a
+              href="https://www.agile-initiative.ox.ac.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={BMULogoAg}
+                className={classes.imgBMULogo}
+                alt="Agile-logo"
+              />
+            </a>
+            <a
+              href="https://www.ox.ac.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={BMULogoOx}
+                className={classes.imgBMULogo}
+                alt="Oxford-logo"
+              />
+            </a>
+            <a
+              href="https://www.gov.br/inpe/pt-br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={BMULogoIn}
+                className={classes.imgBMULogo}
+                alt="Inpe-logo"
+              />
+            </a>
           </div>
         </DialogContent>
         <DialogActions>

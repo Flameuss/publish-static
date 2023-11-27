@@ -28,7 +28,7 @@ web_run:
 	uvicorn app:app --reload
 
 docker_up:
-	docker-compose up -d
+	docker compose up -d
 
 docker_down:
 	docker-compose down
@@ -38,4 +38,4 @@ docker_prune:
 	docker volume prune -f
 
 run:
-	python main.py
+	python3 main.py

@@ -114,7 +114,6 @@ begin;update "output_brazilsforestcode_brazil" set "idc2_dd_wetlnd20" = (select 
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_wetlnd30" = (select trunc(sum("wetlnd30" ), 3) from "brazilsforestcode_idc2_dd");commit;
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_wetlnd40" = (select trunc(sum("wetlnd40" ), 3) from "brazilsforestcode_idc2_dd");commit;
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_wetlnd50" = (select trunc(sum("wetlnd50" ), 3) from "brazilsforestcode_idc2_dd");commit;
-
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_forreg30" = (select trunc(sum("forreg30" ), 3) from "brazilsforestcode_idc2_dd");commit;
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_forreg40" = (select trunc(sum("forreg40" ), 3) from "brazilsforestcode_idc2_dd");commit;
 begin;update "output_brazilsforestcode_brazil" set "idc2_dd_forreg50" = (select trunc(sum("forreg50" ), 3) from "brazilsforestcode_idc2_dd");commit;

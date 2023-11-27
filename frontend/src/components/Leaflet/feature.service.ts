@@ -90,7 +90,7 @@ class Service {
         resolve(this.cache.attributes.biomes);
       } else {
         axios
-          .get('/data/biomes-labels.pbf', {
+          .get('/data/label_luccme_biomes.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -158,6 +158,16 @@ class Service {
                 visible: false,
                 data: this.cache.labels.biomes,
               },
+              {
+                name: t('Drawer.SideContent.attribute.chips.6.name'),
+                label: t('Drawer.SideContent.attribute.chips.6.label'),
+                type: ViewType.ATTRIBUTE,
+                description: t(
+                  'Drawer.SideContent.attribute.chips.6.description',
+                ),
+                visible: false,
+                data: this.cache.labels.biomes,
+              },
             ];
 
             this.cache.attributes.biomes = views;
@@ -176,7 +186,7 @@ class Service {
         resolve(this.cache.labels.brazil);
       } else {
         axios
-          .get('/data/brazil-labels.pbf', {
+          .get('/data/label_luccme_brazil.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -197,7 +207,7 @@ class Service {
         resolve(this.cache.labels.regions);
       } else {
         axios
-          .get('/data/regions-labels.pbf', {
+          .get('/data/label_luccme_regions.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -218,7 +228,7 @@ class Service {
         resolve(this.cache.labels.states);
       } else {
         axios
-          .get('/data/states-labels.pbf', {
+          .get('/data/label_luccme_states.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -276,7 +286,7 @@ class Service {
         resolve(this.cache.borders.biomes);
       } else {
         axios
-          .get('/data/biomes.pbf', { responseType: 'arraybuffer' })
+          .get('/data/luccme_biomes.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const biomes = geojson;
@@ -368,7 +378,7 @@ class Service {
         resolve(this.cache.borders.brazil);
       } else {
         axios
-          .get('/data/brazil.pbf', { responseType: 'arraybuffer' })
+          .get('/data/luccme_brazil.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const brazil = geojson;
@@ -415,7 +425,7 @@ class Service {
         resolve(this.cache.borders.regions);
       } else {
         axios
-          .get('/data/regions.pbf', { responseType: 'arraybuffer' })
+          .get('/data/luccme_regions.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const regions = geojson;
@@ -498,7 +508,7 @@ class Service {
         resolve(this.cache.borders.states);
       } else {
         axios
-          .get('/data/states.pbf', { responseType: 'arraybuffer' })
+          .get('/data/luccme_states.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
 

@@ -29,7 +29,7 @@ type Action =
   | { type: 'SET_COMPARE_SCENARIO'; name: string };
 
 export const initialState: State = {
-  currentScenario: 'IDC2',
+  currentScenario: 'BASE',
   currentAttribute: 'Forest vegetation',
   currentBorder: 'Biomes',
   currentBackground: 'None',
@@ -45,11 +45,11 @@ export const initialState: State = {
   },
   colors: {
     None: 'rgba(117,117,117,1)',
-    IDC2: 'rgba(215,25,28,1)',
+    BASE: 'rgba(215,25,28,1)',
     FC: 'rgba(253,174,97,1)',
-    FCnoCRA: 'rgba(229,229,171,1)',
-    FCnoSFA: 'rgba(171,221,164,1)',
-    FCnoCRAnoSFA: 'rgba(43,131,186,1)',
+    FCplus: 'rgba(229,229,171,1)',
+    FCNZ: 'rgba(171,221,164,1)',
+    FCplusNZ: 'rgba(43,131,186,1)',
   },
   compareScenarioEnabled: false,
   compareWithScenario: '',

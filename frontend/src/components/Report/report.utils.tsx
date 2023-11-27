@@ -8,24 +8,24 @@ const scenariosColors = mapper.getScenariosShip();
 const scenariosName = mapper.getScenarioNames();
 const scenariosLabels = mapper.getScenarioNamesFriendly();
 
-const scenario0Name = scenariosName.IDC2;
+const scenario0Name = scenariosName.BASE;
 const scenario1Name = scenariosName.FC;
-const scenario2Name = scenariosName.FCnoCRA;
-const scenario3Name = scenariosName.FCnoSFA;
-const scenario4Name = scenariosName.FCnoCRAnoSFA;
+const scenario2Name = scenariosName.FCplus;
+const scenario3Name = scenariosName.FCNZ;
+const scenario4Name = scenariosName.FCplusNZ;
 
-const scenario0Label = scenariosLabels.IDC2;
+const scenario0Label = scenariosLabels.BASE;
 const scenario1Label = scenariosLabels.FC;
-const scenario2Label = scenariosLabels.FCnoCRA;
-const scenario3Label = scenariosLabels.FCnoSFA;
-const scenario4Label = scenariosLabels.FCnoCRAnoSFA;
+const scenario2Label = scenariosLabels.FCplus;
+const scenario3Label = scenariosLabels.FCNZ;
+const scenario4Label = scenariosLabels.FCplusNZ;
 
 const compareColor = scenariosColors.NONE;
-const scenario0Color = scenariosColors.IDC2;
+const scenario0Color = scenariosColors.BASE;
 const scenario1Color = scenariosColors.FC;
-const scenario2Color = scenariosColors.FCnoCRA;
-const scenario3Color = scenariosColors.FCnoSFA;
-const scenario4Color = scenariosColors.FCnoCRAnoSFA;
+const scenario2Color = scenariosColors.FCplus;
+const scenario3Color = scenariosColors.FCNZ;
+const scenario4Color = scenariosColors.FCplusNZ;
 
 export function datasetsFactory(
   state: State,

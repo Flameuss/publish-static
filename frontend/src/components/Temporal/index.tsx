@@ -72,12 +72,24 @@ const defaultMarks = [
     label: '2020',
   },
   {
+    value: 16.5,
+    label: '2025',
+  },
+  {
     value: 33,
     label: '2030',
   },
   {
+    value: 49.5,
+    label: '2035',
+  },
+  {
     value: 66,
     label: '2040',
+  },
+  {
+    value: 82.5,
+    label: '2045',
   },
   {
     value: 100,
@@ -148,14 +160,14 @@ const createTemporalSlider = (
 // deslocar a barra do tempo mais do que 1 ano por vez.
 const colors = mapper.getScenariosShip();
 
-const TemporalSliderScenarioIDC2Difference = createTemporalSlider(
-  colors.IDC2,
-  colors.IDC2,
+const TemporalSliderScenarioBASEDifference = createTemporalSlider(
+  colors.BASE,
+  colors.BASE,
   3,
 );
-const TemporalSliderScenarioIDC2Absolute = createTemporalSlider(
+const TemporalSliderScenarioBASEAbsolute = createTemporalSlider(
   colors.NONE,
-  colors.IDC2,
+  colors.BASE,
   0,
 );
 
@@ -169,36 +181,36 @@ const TemporalSliderScenarioFCAbsolute = createTemporalSlider(
   colors.FC,
   0,
 );
-const TemporalSliderScenarioFCnoCRADifference = createTemporalSlider(
-  colors.FCnoCRA,
-  colors.FCnoCRA,
+const TemporalSliderScenarioFCplusDifference = createTemporalSlider(
+  colors.FCplus,
+  colors.FCplus,
   3,
 );
-const TemporalSliderScenarioFCnoCRAAbsolute = createTemporalSlider(
+const TemporalSliderScenarioFCplusAbsolute = createTemporalSlider(
   colors.NONE,
-  colors.FCnoCRA,
+  colors.FCplus,
   0,
 );
 
-const TemporalSliderScenarioFCnoSFADifference = createTemporalSlider(
-  colors.FCnoSFA,
-  colors.FCnoSFA,
+const TemporalSliderScenarioFCNZDifference = createTemporalSlider(
+  colors.FCNZ,
+  colors.FCNZ,
   3,
 );
-const TemporalSliderScenarioFCnoSFAAbsolute = createTemporalSlider(
+const TemporalSliderScenarioFCNZAbsolute = createTemporalSlider(
   colors.NONE,
-  colors.FCnoSFA,
+  colors.FCNZ,
   0,
 );
 
-const TemporalSliderScenarioFCnoCRAnoSFADifference = createTemporalSlider(
-  colors.FCnoCRAnoSFA,
-  colors.FCnoCRAnoSFA,
+const TemporalSliderScenarioFCplusNZDifference = createTemporalSlider(
+  colors.FCplusNZ,
+  colors.FCplusNZ,
   3,
 );
-const TemporalSliderScenarioFCnoCRAnoSFAAbsolute = createTemporalSlider(
+const TemporalSliderScenarioFCplusNZAbsolute = createTemporalSlider(
   colors.NONE,
-  colors.FCnoCRAnoSFA,
+  colors.FCplusNZ,
   0,
 );
 
@@ -241,9 +253,9 @@ function Temporal() {
     }
 
     if (TimelineOption.DIFFERENCE === state.currentTimelineOption) {
-      if (state.currentScenario === upperNames.IDC2) {
+      if (state.currentScenario === upperNames.BASE) {
         return (
-          <TemporalSliderScenarioIDC2Difference
+          <TemporalSliderScenarioBASEDifference
             aria-label="slider"
             value={sliderValue}
             step={null}
@@ -265,9 +277,9 @@ function Temporal() {
             onChange={handleChangeSlider}
           />
         );
-      } else if (state.currentScenario === upperNames.FCnoCRA) {
+      } else if (state.currentScenario === upperNames.FCplus) {
         return (
-          <TemporalSliderScenarioFCnoCRADifference
+          <TemporalSliderScenarioFCplusDifference
             aria-label="slider"
             value={sliderValue}
             step={null}
@@ -277,9 +289,9 @@ function Temporal() {
             onChange={handleChangeSlider}
           />
         );
-      } else if (state.currentScenario === upperNames.FCnoSFA) {
+      } else if (state.currentScenario === upperNames.FCNZ) {
         return (
-          <TemporalSliderScenarioFCnoSFADifference
+          <TemporalSliderScenarioFCNZDifference
             aria-label="slider"
             value={sliderValue}
             step={null}
@@ -292,7 +304,7 @@ function Temporal() {
       }
 
       return (
-        <TemporalSliderScenarioFCnoCRAnoSFADifference
+        <TemporalSliderScenarioFCplusNZDifference
           aria-label="slider"
           value={sliderValue}
           step={null}
@@ -304,9 +316,9 @@ function Temporal() {
       );
     }
 
-    if (state.currentScenario === upperNames.IDC2) {
+    if (state.currentScenario === upperNames.BASE) {
       return (
-        <TemporalSliderScenarioIDC2Absolute
+        <TemporalSliderScenarioBASEAbsolute
           aria-label="slider"
           value={sliderValue}
           step={null}
@@ -328,9 +340,9 @@ function Temporal() {
           onChange={handleChangeSlider}
         />
       );
-    } else if (state.currentScenario === upperNames.FCnoCRA) {
+    } else if (state.currentScenario === upperNames.FCplus) {
       return (
-        <TemporalSliderScenarioFCnoCRAAbsolute
+        <TemporalSliderScenarioFCplusAbsolute
           aria-label="slider"
           value={sliderValue}
           step={null}
@@ -340,9 +352,9 @@ function Temporal() {
           onChange={handleChangeSlider}
         />
       );
-    } else if (state.currentScenario === upperNames.FCnoSFA) {
+    } else if (state.currentScenario === upperNames.FCNZ) {
       return (
-        <TemporalSliderScenarioFCnoSFAAbsolute
+        <TemporalSliderScenarioFCNZAbsolute
           aria-label="slider"
           value={sliderValue}
           step={null}
@@ -355,7 +367,7 @@ function Temporal() {
     }
 
     return (
-      <TemporalSliderScenarioFCnoCRAnoSFAAbsolute
+      <TemporalSliderScenarioFCplusNZAbsolute
         aria-label="slider"
         value={sliderValue}
         step={null}

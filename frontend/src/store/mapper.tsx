@@ -1,65 +1,66 @@
 import { State } from 'store';
 import { permutator } from './utils';
 
-const years = ['2020', '2030', '2040', '2050'];
+const years = ['2020', '2025', '2030', '2035', '2040', '2045', '2050'];
 
 const colsMap: any = {
-  'Natural Vegetation': 'natveg',
-  'Forest Regenerated': 'forreg',
-  'Planted Forest': 'pltfor',
-  Agriculture: 'cropland',
-  Pasture: 'pasture',
-  'CR Carbon': 'cr_carbon',
+  natveg: 'natveg20',
+  crplnd: 'crplnd20',
+  nonprd: 'nonprd20',
+  crarea: 'crarea20',
+  grslnd: 'grslnd20',
+  pltfor: 'pltfor20',
+  others: 'others20',
 };
 
 const scenarioPropMap: any = {
-  idc2: 'idc2_dd',
-  fc: 'fcdd',
-  fcnocra: 'fcnocra_dd',
-  fcnosfa: 'fcnosfa',
-  fcnocranosfa: 'fcnocranosfa',
+  base: 'base',
+  fc: 'fc',
+  fcplus: 'fcplus',
+  fcnz: 'fcnz',
+  fcplusnz: 'fcplusnz',
 };
 
 const scenarioNameMap: any = {
-  idc2_dd: 'IDC2',
-  fcdd: 'FC',
-  fcnocra_dd: 'FCnoCRA',
-  fcnosfa: 'FCnoSFA',
-  fcnocranosfa: 'FCnoCRAnoSFA',
+  base: 'BASE',
+  fc: 'FC',
+  fcplus: 'FCplus',
+  fcnz: 'FCNZ',
+  fcplusnz: 'FCplusNZ',
 };
 
 const scenarioColorMap: any = {
   none: 'rgba(117,117,117,1)',
-  idc2_dd: 'rgba(215,25,28,1)',
-  fcdd: 'rgba(253,174,97,1)',
-  fcnocra_dd: 'rgba(229,229,171,1)',
-  fcnosfa: 'rgba(171,221,164,1)',
-  fcnocranosfa: 'rgba(43,131,186,1)',
+  BASE: 'rgba(215,25,28,1)',
+  FC: 'rgba(253,174,97,1)',
+  FCplus: 'rgba(229,229,171,1)',
+  FCNZ: 'rgba(171,221,164,1)',
+  FCplusNZ: 'rgba(43,131,186,1)',
 };
 
 const scenarioColorMapFriendly = {
   NONE: 'rgba(117,117,117,1)',
-  IDC2: 'rgba(215,25,28,1)',
+  BASE: 'rgba(215,25,28,1)',
   FC: 'rgba(253,174,97,1)',
-  FCnoCRA: 'rgba(229,229,171,1)',
-  FCnoSFA: 'rgba(171,221,164,1)',
-  FCnoCRAnoSFA: 'rgba(43,131,186,1)',
+  FCplus: 'rgba(229,229,171,1)',
+  FCNZ: 'rgba(171,221,164,1)',
+  FCplusNZ: 'rgba(43,131,186,1)',
 };
 
 const scenarioNameFriendly = {
-  IDC2: 'Baseline',
+  BASE: 'BASE',
   FC: 'FC',
-  FCnoCRA: 'FCnoCRA',
-  FCnoSFA: 'FCnoSFA',
-  FCnoCRAnoSFA: 'FCnoCRAnoSFA',
+  FCplus: 'FCplus',
+  FCNZ: 'FCNZ',
+  FCplusNZ: 'FCplusNZ',
 };
 
 const scenarioName = {
-  IDC2: 'IDC2',
+  BASE: 'BASE',
   FC: 'FC',
-  FCnoCRA: 'FCnoCRA',
-  FCnoSFA: 'FCnoSFA',
-  FCnoCRAnoSFA: 'FCnoCRAnoSFA',
+  FCplus: 'FCplus',
+  FCNZ: 'FCNZ',
+  FCplusNZ: 'FCplusNZ',
 };
 
 const scenariosFriendlyNames = Object.values(scenarioNameFriendly) as string[];
@@ -162,6 +163,7 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.name'),
     t('Drawer.SideContent.attribute.chips.4.name'),
     t('Drawer.SideContent.attribute.chips.5.name'),
+    t('Drawer.SideContent.attribute.chips.6.name'),
   ];
   const datasetLabels = [
     t('Drawer.SideContent.attribute.chips.0.label'),
@@ -170,6 +172,7 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.label'),
     t('Drawer.SideContent.attribute.chips.4.label'),
     t('Drawer.SideContent.attribute.chips.5.label'),
+    t('Drawer.SideContent.attribute.chips.6.label'),
   ];
   const datasetDescriptions = [
     t('Drawer.SideContent.attribute.chips.0.description'),
@@ -178,6 +181,7 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.description'),
     t('Drawer.SideContent.attribute.chips.4.description'),
     t('Drawer.SideContent.attribute.chips.5.description'),
+    t('Drawer.SideContent.attribute.chips.6.description'),
   ];
   return {
     labels,

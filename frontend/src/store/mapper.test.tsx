@@ -9,27 +9,27 @@ test('mapper#getScenarioSwitchText', () => {
 
   let option = mapper.getScenarioSwitchText(testState);
   expect(option.option1).toBe('FC');
-  expect(option.option2).toBe('FCnoCRA');
+  expect(option.option2).toBe('FCplus');
 
   testState = {
     ...initialState,
     compareScenarioEnabled: true,
-    currentScenario: 'FCnoCRA',
+    currentScenario: 'FCplus',
   };
 
   option = mapper.getScenarioSwitchText(testState);
   expect(option.option1).toBe('FC');
-  expect(option.option2).toBe('FCnoSFA');
+  expect(option.option2).toBe('FCNZ');
 
   testState = {
     ...initialState,
     compareScenarioEnabled: true,
-    currentScenario: 'FCnoSFA',
+    currentScenario: 'FCNZ',
   };
 
   option = mapper.getScenarioSwitchText(testState);
   expect(option.option1).toBe('FC');
-  expect(option.option2).toBe('FCnoCRA');
+  expect(option.option2).toBe('FCplus');
 });
 
 test('mapper#getSwitchOptions', () => {
@@ -40,35 +40,35 @@ test('mapper#getSwitchOptions', () => {
 
   let options = mapper.getSwitchOptions(testState);
   expect(JSON.stringify(options)).toBe(
-    JSON.stringify(['FC', 'FCnoCRA', 'FCnoSFA', 'FCnoCRAnoSFA']),
+    JSON.stringify(['FC', 'FCplus', 'FCNZ', 'FCplusNZ']),
   );
 
   testState = {
     ...initialState,
     compareScenarioEnabled: true,
-    currentScenario: 'FCnoCRA',
+    currentScenario: 'FCplus',
   };
 
   options = mapper.getSwitchOptions(testState);
   expect(JSON.stringify(options)).toBe(
-    JSON.stringify(['Baseline', 'FC', 'FCnoSFA', 'FCnoCRAnoSFA']),
+    JSON.stringify(['BASE', 'FC', 'FCNZ', 'FCplusNZ']),
   );
 
   testState = {
     ...initialState,
     compareScenarioEnabled: true,
-    currentScenario: 'FCnoSFA',
+    currentScenario: 'FCNZ',
   };
 
   options = mapper.getSwitchOptions(testState);
   expect(JSON.stringify(options)).toBe(
-    JSON.stringify(['Baseline', 'FC', 'FCnoCRA', 'FCnoCRAnoSFA']),
+    JSON.stringify(['BASE', 'FC', 'FCplus', 'FCplusNZ']),
   );
 });
 
 test('mapper#getScenariosShip', () => {
   const result = mapper.getScenariosShip();
   expect(JSON.stringify(result)).toBe(
-    '{"Baseline":"rgba(43,131,186,1)","FC":"rgba(171,221,164,1)","FCnoCRA":"rgba(255,255,191,1)","FCnoSFA":"rgba(253,174,97,1)","FCnoCRAnoSFA":"rgba(215,25,28,1)"}',
+    '{"NONE":"rgba(117,117,117,1)","BASE":"rgba(215,25,28,1)","FC":"rgba(253,174,97,1)","FCplus":"rgba(229,229,171,1)","FCNZ":"rgba(171,221,164,1)","FCplusNZ":"rgba(43,131,186,1)"}',
   );
 });

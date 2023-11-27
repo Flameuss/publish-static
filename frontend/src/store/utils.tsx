@@ -17,22 +17,23 @@ export const filterByName = (
 
 export const getScenarioMapper = (t: any) => {
   return {
-    IDC2: t('Drawer.SideContent.scenario.chips.0.label'),
+    BASE: t('Drawer.SideContent.scenario.chips.0.label'),
     FC: t('Drawer.SideContent.scenario.chips.1.label'),
-    FCnoCRA: t('Drawer.SideContent.scenario.chips.2.label'),
-    FCnoSFA: t('Drawer.SideContent.scenario.chips.3.label'),
-    FCnoCRAnoSFA: t('Drawer.SideContent.scenario.chips.4.label'),
+    FCplus: t('Drawer.SideContent.scenario.chips.2.label'),
+    FCNZ: t('Drawer.SideContent.scenario.chips.3.label'),
+    FCplusNZ: t('Drawer.SideContent.scenario.chips.4.label'),
   } as any;
 };
 
 export const getAttributesMapper = (t: any) => {
   return {
-    'Natural Vegetation': t('Drawer.SideContent.attribute.chips.0.label'),
-    'Forest Regenerated': t('Drawer.SideContent.attribute.chips.1.label'),
-    'Planted Forest': t('Drawer.SideContent.attribute.chips.2.label'),
-    Agriculture: t('Drawer.SideContent.attribute.chips.3.label'),
-    Pasture: t('Drawer.SideContent.attribute.chips.4.label'),
-    'CR Carbon': t('Drawer.SideContent.attribute.chips.5.label'),
+    natveg: t('Drawer.SideContent.attribute.chips.0.label'),
+    crplnd: t('Drawer.SideContent.attribute.chips.1.label'),
+    nonprd: t('Drawer.SideContent.attribute.chips.2.label'),
+    crarea: t('Drawer.SideContent.attribute.chips.3.label'),
+    grslnd: t('Drawer.SideContent.attribute.chips.4.label'),
+    pltfor: t('Drawer.SideContent.attribute.chips.5.label'),
+    others: t('Drawer.SideContent.attribute.chips.6.label'),
   } as any;
 };
 

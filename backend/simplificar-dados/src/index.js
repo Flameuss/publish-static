@@ -55,7 +55,7 @@ function geoJsonToProtobuf(dirpath) {
 (async () => {
   // 1 - simplificar geometria 0,19 https://gis.stackexchange.com/questions/25914/smoothing-generalizing-polygon-in-qgis
   // 2 - simplificar casas decimais
-  removeDecimaisGeoJsonProperties("/home/heitor/projects/inpe/data/BrazilForestCode/output/2022/geojson/");
+  removeDecimaisGeoJsonProperties("/home/luis/Ti/Inpe/publish-static/database/luiccme_base/output/2023/geojson/");
   // 3 - gerar Protobuf
-  geoJsonToProtobuf("/home/heitor/projects/inpe/data/BrazilForestCode/output/2022/geojson/");
+  geoJsonToProtobuf("/home/luis/Ti/Inpe/publish-static/database/luiccme_base/output/2023/geojson/");
 })();
