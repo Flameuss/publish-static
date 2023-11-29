@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     imgResumeTable: {
-      width: '90%',
+      width: '100%',
       height: '100%',
       marginBottom: 0,
       margin: 'auto',
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     imgBMULogo: {
-      height: 120,
+      height: 80,
       marginTop: 16,
       marginBottom: 0,
       marginLeft: 15,

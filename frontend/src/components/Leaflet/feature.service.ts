@@ -90,7 +90,7 @@ class Service {
         resolve(this.cache.attributes.biomes);
       } else {
         axios
-          .get('/data/label_luccme_biomes.pbf', {
+          .get('./data/label_luccme_biomes.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -138,36 +138,6 @@ class Service {
                 visible: false,
                 data: this.cache.labels.biomes,
               },
-              {
-                name: t('Drawer.SideContent.attribute.chips.4.name'),
-                label: t('Drawer.SideContent.attribute.chips.4.label'),
-                type: ViewType.ATTRIBUTE,
-                description: t(
-                  'Drawer.SideContent.attribute.chips.4.description',
-                ),
-                visible: false,
-                data: this.cache.labels.biomes,
-              },
-              {
-                name: t('Drawer.SideContent.attribute.chips.5.name'),
-                label: t('Drawer.SideContent.attribute.chips.5.label'),
-                type: ViewType.ATTRIBUTE,
-                description: t(
-                  'Drawer.SideContent.attribute.chips.5.description',
-                ),
-                visible: false,
-                data: this.cache.labels.biomes,
-              },
-              {
-                name: t('Drawer.SideContent.attribute.chips.6.name'),
-                label: t('Drawer.SideContent.attribute.chips.6.label'),
-                type: ViewType.ATTRIBUTE,
-                description: t(
-                  'Drawer.SideContent.attribute.chips.6.description',
-                ),
-                visible: false,
-                data: this.cache.labels.biomes,
-              },
             ];
 
             this.cache.attributes.biomes = views;
@@ -180,13 +150,14 @@ class Service {
     });
   }
 
+
   public getLabelsBrazil(): Promise<View[]> {
     return new Promise((resolve: any) => {
       if (this.cache.labels.brazil) {
         resolve(this.cache.labels.brazil);
       } else {
         axios
-          .get('/data/label_luccme_brazil.pbf', {
+          .get('./data/label_luccme_brazil.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -207,7 +178,7 @@ class Service {
         resolve(this.cache.labels.regions);
       } else {
         axios
-          .get('/data/label_luccme_regions.pbf', {
+          .get('./data/label_luccme_regions.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -228,7 +199,7 @@ class Service {
         resolve(this.cache.labels.states);
       } else {
         axios
-          .get('/data/label_luccme_states.pbf', {
+          .get('./data/label_luccme_states.pbf', {
             responseType: 'arraybuffer',
           })
           .then((response: AxiosResponse) => {
@@ -243,26 +214,26 @@ class Service {
     });
   }
 
-  public getLinesStates(): Promise<View[]> {
-    return new Promise((resolve: any) => {
-      if (this.cache.lines.states) {
-        resolve(this.cache.lines.states);
-      } else {
-        axios
-          .get('/data/states-labels-lines.pbf', {
-            responseType: 'arraybuffer',
-          })
-          .then((response: AxiosResponse) => {
-            const geojson = geobuf.decode(new Pbf(response.data));
-            this.cache.lines.states = geojson as GeoJSON.GeoJsonObject;
-            resolve(this.cache.lines.states);
-          })
-          .catch((error: AxiosError) => {
-            console.log(error);
-          });
-      }
-    });
-  }
+  // public getLinesStates(): Promise<View[]> {
+  //   return new Promise((resolve: any) => {
+  //     if (this.cache.lines.states) {
+  //       resolve(this.cache.lines.states);
+  //     } else {
+  //       axios
+  //         .get('./data/states-labels-lines.pbf', {
+  //           responseType: 'arraybuffer',
+  //         })
+  //         .then((response: AxiosResponse) => {
+  //           const geojson = geobuf.decode(new Pbf(response.data));
+  //           this.cache.lines.states = geojson as GeoJSON.GeoJsonObject;
+  //           resolve(this.cache.lines.states);
+  //         })
+  //         .catch((error: AxiosError) => {
+  //           console.log(error);
+  //         });
+  //     }
+  //   });
+  // }
 
   // public getBordersNone(t: any): Promise<View[]> {
   //   return new Promise((resolve: any) => {
@@ -286,7 +257,7 @@ class Service {
         resolve(this.cache.borders.biomes);
       } else {
         axios
-          .get('/data/luccme_biomes.pbf', { responseType: 'arraybuffer' })
+          .get('./data/luccme_biomes.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const biomes = geojson;
@@ -378,7 +349,7 @@ class Service {
         resolve(this.cache.borders.brazil);
       } else {
         axios
-          .get('/data/luccme_brazil.pbf', { responseType: 'arraybuffer' })
+          .get('./data/luccme_brazil.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const brazil = geojson;
@@ -425,7 +396,7 @@ class Service {
         resolve(this.cache.borders.regions);
       } else {
         axios
-          .get('/data/luccme_regions.pbf', { responseType: 'arraybuffer' })
+          .get('./data/luccme_regions.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
             const regions = geojson;
@@ -508,7 +479,7 @@ class Service {
         resolve(this.cache.borders.states);
       } else {
         axios
-          .get('/data/luccme_states.pbf', { responseType: 'arraybuffer' })
+          .get('./data/luccme_states.pbf', { responseType: 'arraybuffer' })
           .then((response: AxiosResponse) => {
             const geojson = geobuf.decode(new Pbf(response.data));
 

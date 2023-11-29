@@ -1,7 +1,7 @@
 {
-  "name": "publishstatic",
+  "name": "nature-based-solutions",
   "version": "0.1.0",
-  "homepage": "https://flameuss.github.io/publish-static",
+  "homepage": "https://flameuss.github.io/nature-based-solutions",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.11.0",

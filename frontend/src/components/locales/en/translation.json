@@ -1,0 +1,189 @@
+{
+  "Language": "en",
+  "Title": "Nature-based solutions are critical for putting Brazil on track towards net-zero emissions by 2050",
+  "Subtitle": "",
+  "AppBar": {
+    "buttonDownload": "Download",
+    "buttonAbout": "About",
+    "buttonTranslate": {
+      "0": "English",
+      "1": "English",
+      "2": "Português"
+    }
+  },
+  "Resume": {
+    "part01": "This application describes the main results of the article ",
+    "part02": "\"Nature-based solutions are critical for putting Brazil on track towards net-zero emissions by 2050.\"",
+    "part03": " To investigate whether existing and expected national policies will allow Brazil to meet its net-zero GHG emissions pledge by 2050, we applied a detailed regional integrated assessment modelling approach. This included quantifying the role of nature-based solutions, such as the protection and restoration of ecosystems, and engineered solutions, such as bioenergy with carbon capture and storage. Our results highlight ecosystem protection as the most critical cost-effective climate mitigation measure for Brazil, whereas relying heavily on costly and not-mature-yet engineered solutions will jeopardise Brazil's chances of achieving its net-zero pledge by mid-century. Our analysis underlines the urgent need for Brazil to go beyond existing policies to help fight climate emergency, to align its short- and long-term climate targets, and to build climate resilience while curbing biodiversity loss."
+  },
+  "Legend": {
+    "cardTitlePrefix": "LEGEND",
+    "cardTitleType": {
+      "SCENARIO": "SCENARIO",
+      "ATTRIBUTE": "ATTRIBUTE",
+      "BORDER": "",
+      "BACKGROUND": "BACKGROUND"
+    },
+    "cardValues": {
+      "Mata Atlântica": "Atlantic Forest",
+      "Pampa": "Pampa",
+      "Pantanal": "Pantanal",
+      "Amazônia": "Amazon",
+      "Caatinga": "Caatinga",
+      "Cerrado": "Cerrado",
+      "Brazil": "Brazil",
+      "Norte": "North",
+      "Nordeste": "Northeast",
+      "Centro-Oeste": "Central-West",
+      "Sul": "South",
+      "Sudeste": "Southeast"
+    }
+  },
+  "Drawer": {
+    "SideContent": {
+      "scenario": {
+        "title": "Scenario",
+        "chips": {
+          "0": {
+            "name": "BASE",
+            "label": "Baseline",
+            "description": "Baseline - scenario where there is partial control of illegal deforestation in the Amazon and Cerrado biomes. There is no restoration of native vegetation.."
+          },
+          "1": {
+            "name": "FC",
+            "label": "FC",
+            "description": "Forest Code (FC) - Built upon BASE, this scenario examines the contribution of Brazil's Forest Code to decrease GHG emissions. Native vegetation restoration takes place in illegally deforested areas identified as environmental debts by the Rural Environmental Cadastre (CAR)."
+          },
+          "2": {
+            "name": "FCplus",
+            "label": "FC+",
+            "description": "Forest Code Plus (FC+) - Built upon FC, this scenario eliminates illegal and legal deforestation and promote more than a twofold increase in the native vegetation restoration relative to FC. Restoration takes place in areas illegally deforested and identified as environmental debts by CAR, as well as in small farms that granted amnesty in 2012."
+          },
+          "3": {
+            "name": "FCNZ",
+            "label": "FCNZ",
+            "description": "Forest Code Net Zero (FCNZ) - Built upon FC, this scenario allows the energy sector to go beyond existing and agreed infrastructure to bridge the gap to a least-cost net-zero GHG."
+          },
+          "4": {
+            "name": "FCplusNZ",
+            "label": "FC+NZ",
+            "description": "Forest Code Plus Net Zero (FC+NZ) - Built upon FC+, this scenario allows the energy sector to go beyond existing and agreed infrastructure to reach a least-cost net-zero GHG."
+          }
+        },
+        "buttons": {
+          "buttonCompare": "Compare"
+        }
+      },
+      "attribute": {
+        "title": "Attribute",
+        "chips": {
+          "0": {
+            "name": "natveg",
+            "label": "Native Vegetation",
+            "description": "This class covers all unmanaged forests and native vegetation. Both the evergreen rain forest of Amazon, the deciduous forest of the Caatinga, and woody savannas of the Cerrado are included in this class."
+          },
+          "1": {
+            "name": "crplnd",
+            "label": "Cropland",
+            "description": "Areas with the 18 GLOBIOM crops, including soy, sugarcane, corn, cassava, and rice."
+          },
+          "2": {
+            "name": "grslnd",
+            "label": "Grassland",
+            "description": "Pasture areas used for livestock ranching."
+          },
+          "3": {
+            "name": "pltfor",
+            "label": "Planted Forest",
+            "description": "These are short-rotation plantations, with single or few species and uniform planting density, that are used by the wood and paper industries."       
+           }
+        }
+      },
+      "border": {
+        "title": "Geographic Division",
+        "chips": {
+          "0": {
+            "name": "None",
+            "label": "None",
+            "description": "Do not show borders"
+          },
+          "1": {
+            "name": "Biomes",
+            "label": "Biomes",
+            "description": "Six Brazilian Biomes"
+          },
+          "2": {
+            "name": "Brazil",
+            "label": "Brazil",
+            "description": "Brazilian territory"
+          },
+          "3": {
+            "name": "Regions",
+            "label": "Regions",
+            "description": "Brazilian regions"
+          },
+          "4": {
+            "name": "States",
+            "label": "States",
+            "description": "Brazilian states"
+          }
+        }
+      },
+      "background": {
+        "title": "Model Grid",
+        "chips": {
+          "0": {
+            "name": "None",
+            "label": "None",
+            "description": "Do now show background"
+          },
+          "1": {
+            "name": "1x1km",
+            "label": "1x1km",
+            "description": "1x1Km at Equator"
+          },
+          "2": {
+            "name": "50x50km",
+            "label": "50x50km",
+            "description": "50x50km at Equator"
+          }
+        }
+      },
+      "settings": {
+        "title": "Settings",
+        "chips": {
+          "0": {
+            "name": "Absolute values",
+            "label": "Change from 2020",
+            "description": "Compare from 2020"
+          },
+          "1": {
+            "name": "Change from 2020",
+            "label": "Change from 2020",
+            "description": "Compare from 2020"
+          },
+          "2": {
+            "name": "Map tooltips enabled",
+            "label": "Map tooltips",
+            "description": "Show map tooltips"
+          },
+          "3": {
+            "name": "Map tooltips disabled",
+            "label": "Map tooltips",
+            "description": "Show map tooltips"
+          }
+        }
+      }
+    }
+  },
+  "ReportAllBiomes": {
+    "title": "All biomes",
+    "name": "",
+    "description": "",
+    "label": "Graph with all geographic divisions",
+    "buttonClose": "Close",
+    "chart": {
+      "labelX": "Year"
+    }
+  }
+}

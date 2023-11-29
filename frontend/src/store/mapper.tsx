@@ -6,11 +6,9 @@ const years = ['2020', '2025', '2030', '2035', '2040', '2045', '2050'];
 const colsMap: any = {
   natveg: 'natveg20',
   crplnd: 'crplnd20',
-  nonprd: 'nonprd20',
-  crarea: 'crarea20',
   grslnd: 'grslnd20',
   pltfor: 'pltfor20',
-  others: 'others20',
+
 };
 
 const scenarioPropMap: any = {
@@ -31,11 +29,11 @@ const scenarioNameMap: any = {
 
 const scenarioColorMap: any = {
   none: 'rgba(117,117,117,1)',
-  BASE: 'rgba(215,25,28,1)',
-  FC: 'rgba(253,174,97,1)',
-  FCplus: 'rgba(229,229,171,1)',
-  FCNZ: 'rgba(171,221,164,1)',
-  FCplusNZ: 'rgba(43,131,186,1)',
+  base: 'rgba(215,25,28,1)',
+  fc: 'rgba(253,174,97,1)',
+  fcplus: 'rgba(229,229,171,1)',
+  fcnz: 'rgba(171,221,164,1)',
+  fcplusnz: 'rgba(43,131,186,1)',
 };
 
 const scenarioColorMapFriendly = {
@@ -48,11 +46,11 @@ const scenarioColorMapFriendly = {
 };
 
 const scenarioNameFriendly = {
-  BASE: 'BASE',
+  BASE: 'Baseline',
   FC: 'FC',
-  FCplus: 'FCplus',
+  FCplus: 'FC+',
   FCNZ: 'FCNZ',
-  FCplusNZ: 'FCplusNZ',
+  FCplusNZ: 'FC+NZ',
 };
 
 const scenarioName = {
@@ -163,7 +161,6 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.name'),
     t('Drawer.SideContent.attribute.chips.4.name'),
     t('Drawer.SideContent.attribute.chips.5.name'),
-    t('Drawer.SideContent.attribute.chips.6.name'),
   ];
   const datasetLabels = [
     t('Drawer.SideContent.attribute.chips.0.label'),
@@ -172,7 +169,6 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.label'),
     t('Drawer.SideContent.attribute.chips.4.label'),
     t('Drawer.SideContent.attribute.chips.5.label'),
-    t('Drawer.SideContent.attribute.chips.6.label'),
   ];
   const datasetDescriptions = [
     t('Drawer.SideContent.attribute.chips.0.description'),
@@ -181,7 +177,6 @@ const getScenarioMetadata = (t: any) => {
     t('Drawer.SideContent.attribute.chips.3.description'),
     t('Drawer.SideContent.attribute.chips.4.description'),
     t('Drawer.SideContent.attribute.chips.5.description'),
-    t('Drawer.SideContent.attribute.chips.6.description'),
   ];
   return {
     labels,
@@ -194,6 +189,7 @@ const getScenarioMetadata = (t: any) => {
     datasetDescriptions,
   };
 };
+
 
 const getScenarioData = (
   datasetName: string,

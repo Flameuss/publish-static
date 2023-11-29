@@ -172,14 +172,14 @@ function Sidebar() {
   const handleTranslateCloseEnglish = () => {
     setAnchorEl(null);
     if (window.location.href.includes('pt')) {
-      window.location.href = `http://${window.location.host}`;
+      window.location.href = `http://${window.location.host}/nature-based-solutions/`;
     }
   };
 
   const handleTranslateClosePortuguese = () => {
     setAnchorEl(null);
     if (!window.location.href.includes('pt')) {
-      window.location.href = `http://${window.location.host}?lng=pt`;
+      window.location.href = `http://${window.location.host}/nature-based-solutions/?lng=pt`;
     }
   };
 

@@ -554,7 +554,7 @@ function Leaflet() {
       featureService.getLabelsBrazil().finally();
       featureService.getLabelsRegions().finally();
       featureService.getLabelsStates().finally();
-      featureService.getLinesStates().finally();
+      // featureService.getLinesStates().finally();
     }, 300);
 
     if (mapRef && mapRef.current) {

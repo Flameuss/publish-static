@@ -1,0 +1,189 @@
+{
+  "Language": "pt",
+  "Title": "As soluções baseadas na natureza são críticas para colocar o Brasil no caminho para emissões líquidas zero até 2050",
+  "Subtitle": "",
+  "AppBar": {
+    "buttonDownload": "Baixar",
+    "buttonAbout": "Sobre",
+    "buttonTranslate": {
+      "0": "Português",
+      "1": "English",
+      "2": "Português"
+    }
+  },
+  "Resume": {
+    "part01": "Esta aplicação descreve os principais resultados do artigo  ",
+    "part02": "\"As soluções baseadas na natureza são críticas para colocar o Brasil no caminho para emissões líquidas zero até 2050.\"",
+    "part03": " Para investigar se as políticas nacionais existentes e esperadas permitirão que o Brasil cumpra sua promessa de emissões líquidas zero de GEE até 2050, aplicamos uma abordagem de modelagem de avaliação integrada regional detalhada. Isso incluiu a quantificação do papel das soluções baseadas na natureza, como a proteção e restauração de ecossistemas, e soluções projetadas, como bioenergia com captura e armazenamento de carbono. Nossos resultados destacam a proteção do ecossistema como a medida de mitigação climática mais crítica e custo-efetiva para o Brasil, enquanto a dependência pesada de soluções projetadas caras e ainda não maduras colocará em risco as chances do Brasil de cumprir sua promessa de zero líquido até meados do século. Nossa análise sublinha a necessidade urgente do Brasil de ir além das políticas existentes para ajudar a combater a emergência climática, alinhar seus objetivos climáticos de curto e longo prazo e construir resiliência climática enquanto controla a perda de biodiversidade."
+  },
+  "Legend": {
+    "cardTitlePrefix": "LEGENDA",
+    "cardTitleType": {
+      "SCENARIO": "CENÁRIO",
+      "ATTRIBUTE": "ATRIBUTO",
+      "BORDER": "",
+      "BACKGROUND": "SEGUNDO PLANO"
+    },
+    "cardValues": {
+      "Mata Atlântica": "Mata Atlântica",
+      "Pampa": "Pampa",
+      "Pantanal": "Pantanal",
+      "Amazônia": "Amazônia",
+      "Caatinga": "Caatinga",
+      "Cerrado": "Cerrado",
+      "Brazil": "Brasil",
+      "Norte": "Norte",
+      "Nordeste": "Nordeste",
+      "Centro-Oeste": "Centro-Oeste",
+      "Sul": "Sul",
+      "Sudeste": "Sudeste"
+    }
+  },
+  "Drawer": {
+    "SideContent": {
+      "scenario": {
+        "title": "Cenário",
+        "chips": {
+          "0": {
+            "name": "BASE",
+            "label": "Baseline",
+            "description": "Cenário de linha de base onde há um controle parcial do desmatamento ilegal nos biomas Amazônia e Cerrado. Não há restauração da vegetação nativa."
+          },
+          "1": {
+            "name": "FC",
+            "label": "FC",
+            "description": "Código Florestal (FC) - Construído sobre a BASE, este cenário examina a contribuição do Código Florestal do Brasil para diminuir as emissões de GHG. A restauração da vegetação nativa ocorre em áreas ilegalmente desmatadas identificadas como dívidas ambientais pelo Cadastro Ambiental Rural (CAR)."
+          },
+          "2": {
+            "name": "FCplus",
+            "label": "FC+",
+            "description": "Código Florestal Plus (FC+) - Construído sobre o FC, este cenário elimina o desmatamento ilegal e legal e promove um aumento de mais do que o dobro na restauração da vegetação nativa em relação ao FC. A restauração ocorre em áreas ilegalmente desmatadas e identificadas como dívidas ambientais pelo CAR, bem como em pequenas fazendas que receberam anistia em 2012."
+          },
+          "3": {
+            "name": "FCNZ",
+            "label": "FCNZ",
+            "description": "Código Florestal Net Zero (FCNZ) - Construído sobre o FC, este cenário permite que o setor de energia vá além da infraestrutura existente e acordada para preencher a lacuna para um GHG líquido zero de menor custo."
+          },
+          "4": {
+            "name": "FCplusNZ",
+            "label": "FC+NZ",
+            "description": "Código Florestal Plus Net Zero (FC+NZ) - Construído sobre o FC+, este cenário permite que o setor de energia vá além da infraestrutura existente e acordada para alcançar um GHG líquido zero de menor custo."
+          }
+        },
+        "buttons": {
+          "buttonCompare": "Comparar"
+        }
+      },
+      "attribute": {
+        "title": "Atributos",
+        "chips": {
+          "0": {
+            "name": "natveg",
+            "label": "Vegetação Nativa",
+            "description": "Esta classe abrange todas as florestas não manejadas e vegetação nativa. Tanto a floresta tropical perene da Amazônia, a floresta decídua da Caatinga e as savanas lenhosas do Cerrado estão incluídas nesta classe."
+          },
+          "1": {
+            "name": "crplnd",
+            "label": "Área de Cultivo",
+            "description": "Áreas com as 18 culturas GLOBIOM, incluindo soja, cana-de-açúcar, milho, mandioca e arroz."
+          },
+          "2": {
+            "name": "grslnd",
+            "label": "Campo",
+            "description": "Áreas de pastagem usadas para pecuária."
+          },
+          "3": {
+            "name": "pltfor",
+            "label": "Floresta Plantada",
+            "description": "Estas são plantações de rotação curta, com uma única espécie ou poucas espécies e densidade de plantio uniforme, que são usadas pelas indústrias de madeira e papel."
+          }
+        }
+      },
+      "border": {
+        "title": "Divisão Geográfica",
+        "chips": {
+          "0": {
+            "name": "None",
+            "label": "Nenhuma",
+            "description": "Não mostrar bordas"
+          },
+          "1": {
+            "name": "Biomes",
+            "label": "Biomas",
+            "description": "Seis biomas brasileiros"
+          },
+          "2": {
+            "name": "Brazil",
+            "label": "Brasil",
+            "description": "Território brasileiro"
+          },
+          "3": {
+            "name": "Regions",
+            "label": "Regiões",
+            "description": "Regiões do Brasil"
+          },
+          "4": {
+            "name": "States",
+            "label": "Estados",
+            "description": "Estados do Brasil"
+          }
+        }
+      },
+      "background": {
+        "title": "Modelo de Grid",
+        "chips": {
+          "0": {
+            "name": "None",
+            "label": "Nenhum",
+            "description": "Sem informações em segundo plano"
+          },
+          "1": {
+            "name": "1x1km",
+            "label": "1x1km",
+            "description": "1x1Km no Equador"
+          },
+          "2": {
+            "name": "50x50km",
+            "label": "50x50km",
+            "description": "50x50km no Equador"
+          }
+        }
+      },
+      "settings": {
+        "title": "Configurações",
+        "chips": {
+          "0": {
+            "name": "Absolute values",
+            "label": "Mudanças de 2020",
+            "description": "Comparar mudanças de 2020"
+          },
+          "1": {
+            "name": "Change from 2020",
+            "label": "Mudanças de 2020",
+            "description": "Comparar mudanças de 2020"
+          },
+          "2": {
+            "name": "Map tooltips enabled",
+            "label": "Mostrar valores no mapa",
+            "description": "Mostrar valores no mapa"
+          },
+          "3": {
+            "name": "Map tooltips disabled",
+            "label": "Mostrar valores no mapa",
+            "description": "Mostrar valores no mapa"
+          }
+        }
+      }
+    }
+  },
+  "ReportAllBiomes": {
+    "title": "Todos os biomas",
+    "name": "",
+    "description": "",
+    "label": "Gráfico com divisões geográficas",
+    "buttonClose": "Fechar",
+    "chart": {
+      "labelX": "Ano"
+    }
+  }
+}

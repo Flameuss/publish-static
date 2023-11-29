@@ -29,11 +29,8 @@ export const getAttributesMapper = (t: any) => {
   return {
     natveg: t('Drawer.SideContent.attribute.chips.0.label'),
     crplnd: t('Drawer.SideContent.attribute.chips.1.label'),
-    nonprd: t('Drawer.SideContent.attribute.chips.2.label'),
-    crarea: t('Drawer.SideContent.attribute.chips.3.label'),
-    grslnd: t('Drawer.SideContent.attribute.chips.4.label'),
-    pltfor: t('Drawer.SideContent.attribute.chips.5.label'),
-    others: t('Drawer.SideContent.attribute.chips.6.label'),
+    grslnd: t('Drawer.SideContent.attribute.chips.2.label'),
+    pltfor: t('Drawer.SideContent.attribute.chips.3.label'),
   } as any;
 };
 
