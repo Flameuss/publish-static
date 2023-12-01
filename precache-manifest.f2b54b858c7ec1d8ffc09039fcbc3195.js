@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c69123fd8142719abd0b94869f487c81",
+    "revision": "88b2a4f6c0268d60b9535790fbf9540e",
     "url": "/nature-based-solutions/index.html"
   },
   {
-    "revision": "60739d3dd84d1bf05b50",
+    "revision": "701ab2c96354ef581f77",
     "url": "/nature-based-solutions/static/css/main.9e8d31ff.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nature-based-solutions/static/js/2.37fb3170.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60739d3dd84d1bf05b50",
-    "url": "/nature-based-solutions/static/js/main.cef91409.chunk.js"
+    "revision": "701ab2c96354ef581f77",
+    "url": "/nature-based-solutions/static/js/main.32cfcf48.chunk.js"
   },
   {
     "revision": "e6a79a80e95cd7d7e33e",
@@ -48,11 +48,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nature-based-solutions/static/media/oxford-logo.8bddce90.png"
   },
   {
-    "revision": "360a3a1ba889bb3602a528589999bc10",
-    "url": "/nature-based-solutions/static/media/resume-en.360a3a1b.png"
+    "revision": "e78b30031edd3109f8797e5c2f3f7d61",
+    "url": "/nature-based-solutions/static/media/resume-en.e78b3003.png"
   },
   {
-    "revision": "abe0077066f33c21898f0765e06568f4",
-    "url": "/nature-based-solutions/static/media/resume-pt.abe00770.png"
+    "revision": "884426a9ccbb168fae0477271c857cf3",
+    "url": "/nature-based-solutions/static/media/resume-pt.884426a9.png"
   }
 ]);
