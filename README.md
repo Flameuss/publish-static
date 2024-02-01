@@ -1,6 +1,6 @@
 # O App 
 
-[clique aqui!](https://pedro-andrade-inpe.github.io/nature-based-solutions/)
+[clique aqui para executar a aplicação!](https://pedro-andrade-inpe.github.io/nature-based-solutions/)
 
 # Preparação dos Dados Espaciais
 
