@@ -14,10 +14,7 @@
   "Resume": {
     "part01": "This application describes the main results of the article ",
     "part02": "\"Nature-based solutions are critical for putting Brazil on track towards net-zero emissions by 2050.\"",
-    "part03": " To investigate whether existing and expected national policies will allow Brazil to meet its net-zero GHG emissions pledge by 2050, we applied a detailed regional integrated assessment modelling approach. This included quantifying the role of nature-based solutions, such as the protection and restoration of ecosystems, and engineered solutions, such as bioenergy with carbon capture and storage. Our results highlight ecosystem protection as the most critical cost-effective climate mitigation measure for Brazil, whereas relying heavily on costly and not-mature-yet engineered solutions will jeopardise Brazil's chances of achieving its net-zero pledge by mid-century. Our analysis underlines the urgent need for Brazil to go beyond existing policies to help fight climate emergency, to align its short- and long-term climate targets, and to build climate resilience while curbing biodiversity loss.",
-    "part04": "This work was supported by the Natural Environment Research Council (NERC) (Grant NE/W004976/1) as part of the ",
-    "part05": "Agile Initiative ",
-    "part06": "at the Oxford Martin School with additional funding from Nature-based Solutions Initiative and the Oxford Net Zero Initiative via the University of Oxford's Strategic Research Fund"
+    "part03": " To investigate whether existing and expected national policies will allow Brazil to meet its net-zero GHG emissions pledge by 2050, we applied a detailed regional integrated assessment modelling approach. This included quantifying the role of nature-based solutions, such as the protection and restoration of ecosystems, and engineered solutions, such as bioenergy with carbon capture and storage. Our results highlight ecosystem protection as the most critical cost-effective climate mitigation measure for Brazil, whereas relying heavily on costly and not-mature-yet engineered solutions will jeopardise Brazil's chances of achieving its net-zero pledge by mid-century. Our analysis underlines the urgent need for Brazil to go beyond existing policies to help fight climate emergency, to align its short- and long-term climate targets, and to build climate resilience while curbing biodiversity loss."
   },
   "Legend": {
     "cardTitlePrefix": "LEGEND",
@@ -98,8 +95,8 @@
           "3": {
             "name": "pltfor",
             "label": "Planted Forest",
-            "description": "These are short-rotation plantations, with single or few species and uniform planting density, that are used by the wood and paper industries."
-          }
+            "description": "These are short-rotation plantations, with single or few species and uniform planting density, that are used by the wood and paper industries."       
+           }
         }
       },
       "border": {
