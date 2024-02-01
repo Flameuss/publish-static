@@ -1,30 +1,31 @@
 {
   "files": {
     "main.css": "/nature-based-solutions/static/css/main.9e8d31ff.chunk.css",
-    "main.js": "/nature-based-solutions/static/js/main.32cfcf48.chunk.js",
-    "main.js.map": "/nature-based-solutions/static/js/main.32cfcf48.chunk.js.map",
+    "main.js": "/nature-based-solutions/static/js/main.cb805c99.chunk.js",
+    "main.js.map": "/nature-based-solutions/static/js/main.cb805c99.chunk.js.map",
     "runtime-main.js": "/nature-based-solutions/static/js/runtime-main.feeee8b9.js",
     "runtime-main.js.map": "/nature-based-solutions/static/js/runtime-main.feeee8b9.js.map",
-    "static/js/2.37fb3170.chunk.js": "/nature-based-solutions/static/js/2.37fb3170.chunk.js",
-    "static/js/2.37fb3170.chunk.js.map": "/nature-based-solutions/static/js/2.37fb3170.chunk.js.map",
+    "static/js/2.e183e68b.chunk.js": "/nature-based-solutions/static/js/2.e183e68b.chunk.js",
+    "static/js/2.e183e68b.chunk.js.map": "/nature-based-solutions/static/js/2.e183e68b.chunk.js.map",
     "index.html": "/nature-based-solutions/index.html",
-    "precache-manifest.f2b54b858c7ec1d8ffc09039fcbc3195.js": "/nature-based-solutions/precache-manifest.f2b54b858c7ec1d8ffc09039fcbc3195.js",
+    "precache-manifest.57ec6f27e3cf69b6e6a7fb715d94a648.js": "/nature-based-solutions/precache-manifest.57ec6f27e3cf69b6e6a7fb715d94a648.js",
     "service-worker.js": "/nature-based-solutions/service-worker.js",
     "static/css/main.9e8d31ff.chunk.css.map": "/nature-based-solutions/static/css/main.9e8d31ff.chunk.css.map",
-    "static/js/2.37fb3170.chunk.js.LICENSE.txt": "/nature-based-solutions/static/js/2.37fb3170.chunk.js.LICENSE.txt",
+    "static/js/2.e183e68b.chunk.js.LICENSE.txt": "/nature-based-solutions/static/js/2.e183e68b.chunk.js.LICENSE.txt",
+    "static/media/NERC-logo.jpg": "/nature-based-solutions/static/media/NERC-logo.98e6139e.jpg",
     "static/media/agile-logo.png": "/nature-based-solutions/static/media/agile-logo.92a0e787.png",
     "static/media/getFetch.cjs": "/nature-based-solutions/static/media/getFetch.013f0b90.cjs",
     "static/media/inpe-logo.png": "/nature-based-solutions/static/media/inpe-logo.1286f05c.png",
     "static/media/nature-logo.png": "/nature-based-solutions/static/media/nature-logo.60185f7b.png",
     "static/media/netzero-logo.png": "/nature-based-solutions/static/media/netzero-logo.fac979ae.png",
     "static/media/oxford-logo.png": "/nature-based-solutions/static/media/oxford-logo.8bddce90.png",
-    "static/media/resume-en.png": "/nature-based-solutions/static/media/resume-en.e78b3003.png",
-    "static/media/resume-pt.png": "/nature-based-solutions/static/media/resume-pt.884426a9.png"
+    "static/media/resume-en.png": "/nature-based-solutions/static/media/resume-en.360a3a1b.png",
+    "static/media/resume-pt.png": "/nature-based-solutions/static/media/resume-pt.b6208483.png"
   },
   "entrypoints": [
     "static/js/runtime-main.feeee8b9.js",
-    "static/js/2.37fb3170.chunk.js",
+    "static/js/2.e183e68b.chunk.js",
     "static/css/main.9e8d31ff.chunk.css",
-    "static/js/main.32cfcf48.chunk.js"
+    "static/js/main.cb805c99.chunk.js"
   ]
 }
