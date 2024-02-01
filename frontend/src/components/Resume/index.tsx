@@ -14,6 +14,7 @@ import BMULogoIn from '../../assets/img/inpe-logo.png';
 import BMULogoNa from '../../assets/img/nature-logo.png';
 import BMULogoAg from '../../assets/img/agile-logo.png';
 import BMULogoOx from '../../assets/img/oxford-logo.png';
+import BMULogoNERC from '../../assets/img/NERC-logo.jpg';
 import BMULogoNe from '../../assets/img/netzero-logo.png';
 import resumeEn from '../../assets/img/resume-en.png';
 import resumePt from '../../assets/img/resume-pt.png';
@@ -216,7 +217,30 @@ function Resume({ open, onClose }: ResumeProps) {
                 alt="Inpe-logo"
               />
             </a>
+            {/* <a
+              href="https://www.gov.br/inpe/pt-br"
+              target="_blank"
+              rel="noopener noreferrer"
+            > */}
+            <img
+              src={BMULogoNERC}
+              className={classes.imgBMULogo}
+              alt="Natural-Environment-Research-Council-logo"
+            />
+            {/* </a> */}
           </div>
+          <br />
+          {t('Resume.part04')}
+          <strong>
+            <a
+              href="https://www.agile-initiative.ox.ac.uk/news/nature-based-solutions-essential-if-brazil-is-to-meet-its-2050-net-zero-pledge/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('Resume.part05')}
+            </a>
+          </strong>
+          {t('Resume.part06')}
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose} className={classes.buttonDefault}>
