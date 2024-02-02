@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88b2a4f6c0268d60b9535790fbf9540e",
+    "revision": "afe4786ec536507c5db5f14936e09f51",
     "url": "/nature-based-solutions/index.html"
   },
   {
-    "revision": "701ab2c96354ef581f77",
+    "revision": "9c16227c478c97a07fe4",
     "url": "/nature-based-solutions/static/css/main.9e8d31ff.chunk.css"
   },
   {
-    "revision": "6a8d9161ad6f4b800d86",
-    "url": "/nature-based-solutions/static/js/2.37fb3170.chunk.js"
+    "revision": "ecdaf852a1f9fa768510",
+    "url": "/nature-based-solutions/static/js/2.e183e68b.chunk.js"
   },
   {
     "revision": "6211132799115a7b047d842c9563abc0",
-    "url": "/nature-based-solutions/static/js/2.37fb3170.chunk.js.LICENSE.txt"
+    "url": "/nature-based-solutions/static/js/2.e183e68b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "701ab2c96354ef581f77",
-    "url": "/nature-based-solutions/static/js/main.32cfcf48.chunk.js"
+    "revision": "9c16227c478c97a07fe4",
+    "url": "/nature-based-solutions/static/js/main.cb805c99.chunk.js"
   },
   {
     "revision": "e6a79a80e95cd7d7e33e",
     "url": "/nature-based-solutions/static/js/runtime-main.feeee8b9.js"
+  },
+  {
+    "revision": "98e6139ef068989b344c6f9ab7802ce0",
+    "url": "/nature-based-solutions/static/media/NERC-logo.98e6139e.jpg"
   },
   {
     "revision": "92a0e7873d8e3848c90db8cb23aaa5f5",
@@ -48,11 +52,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nature-based-solutions/static/media/oxford-logo.8bddce90.png"
   },
   {
-    "revision": "e78b30031edd3109f8797e5c2f3f7d61",
-    "url": "/nature-based-solutions/static/media/resume-en.e78b3003.png"
+    "revision": "360a3a1ba889bb3602a528589999bc10",
+    "url": "/nature-based-solutions/static/media/resume-en.360a3a1b.png"
   },
   {
-    "revision": "884426a9ccbb168fae0477271c857cf3",
-    "url": "/nature-based-solutions/static/media/resume-pt.884426a9.png"
+    "revision": "b62084837061aa07c8463dba742d2d98",
+    "url": "/nature-based-solutions/static/media/resume-pt.b6208483.png"
   }
 ]);
